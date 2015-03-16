@@ -1,6 +1,6 @@
 /*
- angular-file-upload v1.1.5
- https://github.com/nervgh/angular-file-upload
+ angular-file-upload v1.2.2
+ https://github.com/samuelcastro/angular-file-upload
 */
 (function(angular, factory) {
     if (typeof define === 'function' && define.amd) {
@@ -99,6 +99,7 @@ module
                         fileItem.isCancel = some.isCancel;
                         fileItem.isError = some.isError;
                         fileItem.isUploading = some.isUploading;
+                        fileItem.isUploaded = some.isUploaded;
                         fileItem.isSuccess = some.isSuccess;
                         fileItem.isReady = some.isReady;
                         this.queue.push(fileItem);
