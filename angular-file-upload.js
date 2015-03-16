@@ -94,6 +94,13 @@ module
                     if (this._isValidFile(temp, arrayOfFilters, options)) {
                         var fileItem = new FileUploader.FileItem(this, some, options);
                         addedFileItems.push(fileItem);
+                        fileItem.progress = some.progress;
+                        fileItem.isSuccess = some.isSuccess;
+                        fileItem.isCancel = some.isCancel;
+                        fileItem.isError = some.isError;
+                        fileItem.isUploading = some.isUploading;
+                        fileItem.isSuccess = some.isSuccess;
+                        fileItem.isReady = some.isReady;
                         this.queue.push(fileItem);
                         this._onAfterAddingFile(fileItem);
                     } else {
