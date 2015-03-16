@@ -83,6 +83,7 @@ module
                         fileItem.isCancel = some.isCancel;
                         fileItem.isError = some.isError;
                         fileItem.isUploading = some.isUploading;
+                        fileItem.isUploaded = some.isUploaded;
                         fileItem.isSuccess = some.isSuccess;
                         fileItem.isReady = some.isReady;
                         this.queue.push(fileItem);
